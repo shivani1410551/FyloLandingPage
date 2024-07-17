@@ -1,0 +1,70 @@
+main {
+  background: url("./images/bg-curve-desktop.svg"), $LightGrayishBlue;
+  background-repeat: no-repeat;
+  .main-wrapper {
+    @extend .center;
+    margin-top: 5rem;
+    column-gap: 1rem;
+    .main-text {
+      flex: 1;
+      .promotion-text {
+        h2 {
+          font-family: $raleway;
+          padding-bottom: 25px;
+        }
+        p {
+          padding-block: 10px;
+          width: 550px;
+          font-size: 17.5px;
+          line-height: 1.4;
+        }
+        a {
+          color: $ModerateCyan;
+          text-decoration: underline;
+          display: block;
+          margin-top: 10px;
+          margin-bottom: 20px;
+        }
+      }
+      .testimonial {
+        width: 400px;
+        background-color: #fff;
+        margin-block: 2rem;
+        padding: 1rem 2rem 1rem 2rem;
+        border-radius: 5px;
+        .quoteImg {
+          padding-block: 10px;
+        }
+        .testimonial-data {
+          line-height: 1.5;
+          padding-bottom: 10px;
+        }
+        .testimonial-person-info {
+          display: flex;
+          align-items: center;
+          padding-block: 10px;
+          .avatar {
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+          }
+          h3 {
+            font-size: 14px;
+            padding-bottom: 3px;
+          }
+          p {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+    .main-image {
+      flex: 1;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}

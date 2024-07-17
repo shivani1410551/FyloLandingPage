@@ -1,0 +1,286 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+p {
+  font-size: 16px;
+}
+
+body {
+  background-color: #fff;
+  max-width: 100%;
+  height: 100vh;
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #111;
+}
+
+li {
+  list-style: none;
+}
+
+.header-wrapper,
+.main-wrapper,
+.sub-footer,
+.main-footer {
+  padding: 2rem;
+}
+
+img,
+span,
+button,
+input {
+  display: inline-block;
+}
+
+.center, main .main-wrapper, header .hero, header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn-primary, header .hero .left form input[type=email] {
+  border: 0.5px solid #111;
+}
+.btn-primary::-moz-placeholder, header .hero .left form input[type=email]::-moz-placeholder {
+  color: #dedede;
+  padding-left: 10px;
+  border-radius: 5px;
+}
+.btn-primary:-ms-input-placeholder, header .hero .left form input[type=email]:-ms-input-placeholder {
+  color: #dedede;
+  padding-left: 10px;
+  border-radius: 5px;
+}
+.btn-primary::placeholder, header .hero .left form input[type=email]::placeholder {
+  color: #dedede;
+  padding-left: 10px;
+  border-radius: 5px;
+}
+
+.btn-secondary, header .hero .left form input[type=submit] {
+  background-color: hsl(224deg, 93%, 58%);
+  color: hsl(240deg, 75%, 98%);
+  border-radius: 5px;
+  outline: none;
+  border: none;
+}
+
+.form-control {
+  width: 300px;
+  padding: 10px 0;
+  border-radius: 5px;
+}
+
+.input-setting {
+  padding-block: 18px;
+  width: 80%;
+  font-size: 28px;
+}
+
+header {
+  max-width: 1440px;
+}
+header nav {
+  margin-bottom: 36px;
+}
+header nav img {
+  height: 56px;
+  width: auto;
+}
+header nav ul {
+  display: flex;
+  align-items: center;
+}
+header nav ul li:not(last-child) {
+  margin-left: 2rem;
+}
+header .hero {
+  flex-direction: row-reverse;
+}
+header .hero .right {
+  flex: 1;
+  padding: 1rem;
+}
+header .hero .right img {
+  width: 100%;
+  height: auto;
+}
+header .hero .left {
+  flex: 1;
+}
+header .hero .left .text h1 {
+  font-size: 2rem;
+}
+header .hero .left .text p {
+  padding-block: 1rem;
+  font-size: 20px;
+}
+header .hero .left form {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+header .hero .left form input[type=email] {
+  padding: 12px 38px;
+  width: 350px;
+}
+header .hero .left form input[type=submit] {
+  padding: 12px 28px;
+  width: 230px;
+}
+
+main {
+  background: url("./images/bg-curve-desktop.svg"), hsl(240deg, 75%, 98%);
+  background-repeat: no-repeat;
+}
+main .main-wrapper {
+  margin-top: 5rem;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+}
+main .main-wrapper .main-text {
+  flex: 1;
+}
+main .main-wrapper .main-text .promotion-text h2 {
+  font-family: "Raleway", sans-serif;
+  padding-bottom: 25px;
+}
+main .main-wrapper .main-text .promotion-text p {
+  padding-block: 10px;
+  width: 550px;
+  font-size: 17.5px;
+  line-height: 1.4;
+}
+main .main-wrapper .main-text .promotion-text a {
+  color: hsl(170deg, 45%, 43%);
+  text-decoration: underline;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+main .main-wrapper .main-text .testimonial {
+  width: 400px;
+  background-color: #fff;
+  margin-block: 2rem;
+  padding: 1rem 2rem 1rem 2rem;
+  border-radius: 5px;
+}
+main .main-wrapper .main-text .testimonial .quoteImg {
+  padding-block: 10px;
+}
+main .main-wrapper .main-text .testimonial .testimonial-data {
+  line-height: 1.5;
+  padding-bottom: 10px;
+}
+main .main-wrapper .main-text .testimonial .testimonial-person-info {
+  display: flex;
+  align-items: center;
+  padding-block: 10px;
+}
+main .main-wrapper .main-text .testimonial .testimonial-person-info .avatar {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+main .main-wrapper .main-text .testimonial .testimonial-person-info h3 {
+  font-size: 14px;
+  padding-bottom: 3px;
+}
+main .main-wrapper .main-text .testimonial .testimonial-person-info p {
+  font-size: 12px;
+}
+main .main-wrapper .main-image {
+  flex: 1;
+}
+main .main-wrapper .main-image img {
+  width: 100%;
+  height: auto;
+}
+
+footer .footer-wrapper .sub-footer {
+  background-color: hsl(238deg, 22%, 44%);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+footer .footer-wrapper .sub-footer .sub-footer-text {
+  width: 500px;
+}
+footer .footer-wrapper .sub-footer .sub-footer-text h4 {
+  color: hsl(240deg, 75%, 98%);
+  font-size: 1.2rem;
+  padding-bottom: 15px;
+}
+footer .footer-wrapper .sub-footer .sub-footer-text p {
+  color: hsl(0deg, 0%, 75%);
+  line-height: 1.4;
+  font-size: 17px;
+}
+footer .footer-wrapper .sub-footer .sub-footer-buttons .email {
+  width: 400px;
+  display: block;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  text-indent: 10px;
+}
+footer .footer-wrapper .sub-footer .sub-footer-buttons .email::-moz-placeholder {
+  color: hsl(0deg, 0%, 75%);
+  font-size: 10px;
+}
+footer .footer-wrapper .sub-footer .sub-footer-buttons .email:-ms-input-placeholder {
+  color: hsl(0deg, 0%, 75%);
+  font-size: 10px;
+}
+footer .footer-wrapper .sub-footer .sub-footer-buttons .email::placeholder {
+  color: hsl(0deg, 0%, 75%);
+  font-size: 10px;
+}
+footer .footer-wrapper .sub-footer .sub-footer-buttons .submit {
+  background-color: hsl(224deg, 93%, 58%);
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 12px;
+  width: 200px;
+}
+footer .footer-wrapper .main-footer {
+  background-color: hsl(243deg, 87%, 12%);
+  color: hsl(240deg, 75%, 98%);
+}
+footer .footer-wrapper .main-footer .footer-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-block: 1rem;
+}
+footer .footer-wrapper .main-footer .footer-info .footer-1 img {
+  height: 40px;
+  margin-bottom: 10px;
+}
+footer .footer-wrapper .main-footer .footer-info .footer-1 ul li {
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+footer .footer-wrapper .main-footer .footer-info .footer-2,
+footer .footer-wrapper .main-footer .footer-info .footer-3 {
+  font-size: 14px;
+}
+footer .footer-wrapper .main-footer .footer-info .footer-2 ul li,
+footer .footer-wrapper .main-footer .footer-info .footer-3 ul li {
+  margin-bottom: 10px;
+}
+footer .footer-wrapper .main-footer .footer-info .footer-4 .socials i {
+  padding-right: 10px;
+}/*# sourceMappingURL=styles.css.map */

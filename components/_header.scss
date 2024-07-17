@@ -1,0 +1,90 @@
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.btn-primary {
+  border: 0.5px solid #111;
+  &::placeholder {
+    color: #dedede;
+    padding-left: 10px;
+    border-radius: 5px;
+  }
+}
+.btn-secondary {
+  background-color: $BrightBlue;
+  color: $LightGrayishBlue;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+}
+
+.form-control {
+  width: 300px;
+  padding: 10px 0;
+  border-radius: 5px;
+}
+.input-setting {
+  padding-block: 18px;
+  width: 80%;
+  font-size: 28px;
+}
+header {
+  max-width: 1440px;
+  nav {
+    @extend .center;
+    margin-bottom: 36px;
+    img {
+      height: 56px;
+      width: auto;
+    }
+    ul {
+      display: flex;
+      align-items: center;
+      li:not(last-child) {
+        margin-left: 2rem;
+      }
+    }
+  }
+  .hero {
+    @extend .center;
+    flex-direction: row-reverse;
+
+    .right {
+      flex: 1;
+      padding: 1rem;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    .left {
+      flex: 1;
+      .text {
+        h1 {
+          font-size: 2rem;
+        }
+        p {
+          padding-block: 1rem;
+          font-size: 20px;
+        }
+      }
+      form {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        input[type="email"] {
+          @extend .btn-primary;
+          padding: 12px 38px;
+          width: 350px;
+        }
+        input[type="submit"] {
+          @extend .btn-secondary;
+          padding: 12px 28px;
+          width: 230px;
+        }
+      }
+    }
+  }
+}
